@@ -11,8 +11,8 @@ ul {
     margin: 0;
     padding: 0;
 }
-* {
-    
+h1 {
+    margin: 0;
 }
 /*HEADER------------------------------------------------------------------------------------------------------*/
 .header {
@@ -118,7 +118,17 @@ ul {
 }
 /*ADVANTAGES-----------------------------------------------------------------------------------------------*/
 .main .advantages {
-    padding: 80px 0 180px;
+    padding: 80px 0 150px;
+    border-bottom: 10px solid #f5f5f5;
+}
+.main .advantages::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 80px;
+    height: 10px;
+    background: url('../img/spritesheet.png') -732px -124px;
+    bottom: -10px;
 }
 .advantages > div {
     margin: 0 0 30px;

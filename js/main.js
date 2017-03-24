@@ -1,4 +1,4 @@
-var $container = $('#container');
+var $container = $('.advantages');
 // Инициализация
 $container.masonry({
   columnWidth: '.item',
