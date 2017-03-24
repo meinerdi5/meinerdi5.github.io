@@ -1,0 +1,89 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-1 {
+    width: 600px;
+    height: 400px;
+    background-position: -20px -20px;
+}
+
+.sprite-2 {
+    width: 566px;
+    height: 424px;
+    background-position: -20px -460px;
+}
+
+.sprite-bella {
+    width: 164px;
+    height: 64px;
+    background-position: -660px -20px;
+}
+
+.sprite-calendar {
+    width: 32px;
+    height: 32px;
+    background-position: -660px -124px;
+}
+
+.sprite-camboz {
+    width: 164px;
+    height: 164px;
+    background-position: -660px -196px;
+}
+
+.sprite-donna {
+    width: 166px;
+    height: 77px;
+    background-position: -660px -400px;
+}
+
+.sprite-eagl {
+    width: 109px;
+    height: 103px;
+    background-position: -626px -517px;
+}
+
+.sprite-fior {
+    width: 166px;
+    height: 73px;
+    background-position: -626px -660px;
+}
+
+.sprite-italyFlag {
+    width: 80px;
+    height: 10px;
+    background-position: -732px -124px;
+}
+
+.sprite-jermi {
+    width: 138px;
+    height: 89px;
+    background-position: -626px -773px;
+}
+
+.sprite-logo {
+    width: 262px;
+    height: 126px;
+    background-position: -864px -20px;
+}
+
+.sprite-other {
+    width: 254px;
+    height: 95px;
+    background-position: -864px -186px;
+}
+
+.sprite-social {
+    width: 161px;
+    height: 18px;
+    background-position: -864px -321px;
+}
+
+.sprite-wallet {
+    width: 32px;
+    height: 32px;
+    background-position: -1158px -186px;
+}
