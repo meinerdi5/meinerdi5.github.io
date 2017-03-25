@@ -119,17 +119,8 @@ h1 {
 /*ADVANTAGES-----------------------------------------------------------------------------------------------*/
 .main .advantages {
     padding: 80px 0 150px;
-    border-bottom: 10px solid #f5f5f5;
 }
-.main .advantages::after {
-    content: '';
-    display: block;
-    position: absolute;
-    width: 80px;
-    height: 10px;
-    background: url('../img/spritesheet.png') -732px -124px;
-    bottom: -10px;
-}
+
 .advantages > div {
     margin: 0 0 30px;
 }
@@ -219,4 +210,95 @@ h1 {
     height: 32px;
     background: url('../img/spritesheet.png') -660px -124px;
     top: 35px;
+}
+/*PRODUCTS------------------------------------------------------------------------------------------------*/
+.main .products {
+    border-top: 10px solid #f5f5f5;
+    padding: 178px 0 88px;
+    position: relative;
+}
+.main .products::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 80px;
+    height: 10px;
+    background: url('../img/spritesheet.png') -732px -124px;
+    top: -10px;
+}
+.products h1 {
+    position: absolute;
+    top: -35px;
+    left: 120px;
+    font: 4.8rem Trebuchet MS;
+}
+/*Big--------------------------------------------*/
+.products .big {
+    padding: 150px 0 160px 280px;
+    background: #e0e0e0;
+    position: relative;
+}
+.products .big::before {
+    content: '';
+    display: block;
+    position: absolute;
+    background: #eaeaea;
+    width: 50%;
+    height: 668px; 
+    right: 0;
+    bottom: 0;
+}
+.big .name {
+    font: bold 3rem Trebuchet MS;
+    padding: 0 0 55px;
+    position: relative;
+}
+.big .name::after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 80px;
+    background: #e0cc91;
+    bottom: 25px;
+}
+.big .inf,
+.big .inf2 {
+    font: 1.4rem 'PT serif';
+    z-index: 2;
+    position: relative;
+}
+.big .inf2 {
+    font-weight: bold;
+    margin: 0 0 25px;
+    position: relative;
+}
+.big .last {
+    margin: 0 0 80px;
+}
+.big .last::after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 80px;
+    background: #e0cc91;
+    bottom: -35px;
+}
+.big .price {
+    font: bold 2.4rem Trebuchet MS;
+    position: relative;
+}
+.big .price::before {
+    content: 'грн';
+    position: absolute;
+    font: bold 1.4rem Trebuchet MS;
+    left: 105px;
+    top: 2px;
+    border-bottom: 4px solid #bd4f61;
+}
+.big img {
+    position: absolute;
+    left: 50px;
+    top: 94px;
 }
