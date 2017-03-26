@@ -239,17 +239,17 @@ h1 {
 }
 /*Big--------------------------------------------*/
 .products .big {
-    padding: 150px 0 160px 280px;
     background: #e0e0e0;
     position: relative;
+    padding: 30px 0;
 }
 .products .big::before {
     content: '';
     display: block;
     position: absolute;
     background: #eaeaea;
-    width: 50%;
-    height: 668px; 
+    width: 100%;
+    height: 50%; 
     right: 0;
     bottom: 0;
 }
@@ -257,7 +257,8 @@ h1 {
     font: bold 3rem Trebuchet MS;
     padding: 0 0 55px;
     position: relative;
-    z-index: 1
+    z-index: 1;
+    text-align: center;
 }
 .big .name::after {
     content: '';
@@ -267,6 +268,7 @@ h1 {
     width: 80px;
     background: #e0cc91;
     bottom: 25px;
+    left: calc(50% - 40px);
 }
 .big .name::before {
     content: '';
@@ -315,9 +317,9 @@ h1 {
     border-bottom: 4px solid #bd4f61;
 }
 .big img {
-    position: absolute;
-    left: 50px;
-    top: 94px;
+    position: relative;
+    left: calc(50% - 75.5px);
+    top: 0;
 }
 /*little---------------------------------*/
 .products .little {
