@@ -378,11 +378,12 @@ h1 {
     text-align: center;
     left: calc(50% - 31.5px);
 }
-/*BLOG----------------------------------------------------------------------------------------*/
+/*BLOG-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 .main .blog {
     padding: 108px 0 0;
     border-top: 10px solid #f5f5f5;
     position: relative;
+    border-bottom: 1px solid #e0e0e0;
 }
 .blog .blogItem {
     padding: 30px 30px 30px 15px;
@@ -419,4 +420,12 @@ h1 {
     padding: 30px 30px 30px 20px;
     font: 1.4rem 'PT serif';
     margin: 0 0 20px;
+}
+.blog .all {
+    font: bold 1.8rem Trebuchet MS;
+    color: #000;
+    border-bottom: 4px solid #bd4f61;
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 50px)
 }
