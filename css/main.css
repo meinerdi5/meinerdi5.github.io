@@ -127,7 +127,7 @@ h1 {
 /*exclus------------------------------------*/
 .advantages .exclus {
     padding: 50px 35px 30px;
-    border: 4px solid #e0cc91
+    border: 4px solid #e0e0e0;
 }
 .exclus p {
     font: bold 3rem Trebuchet MS;
@@ -301,4 +301,53 @@ h1 {
     position: absolute;
     left: 50px;
     top: 94px;
+}
+/*little---------------------------------*/
+.products .little {
+    padding: 220px 0 35px;
+    border: 4px solid #e0e0e0;
+    position: relative;
+}
+.little .name {
+    padding: 0 0 35px;
+    font: bold 1.8rem Trebuchet MS;
+    position: relative;
+    text-align: center;
+}
+.little .name::before {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 80px;
+    background: #e0cc91;
+    bottom: 17px;
+    left: 95px;
+}
+.little .price::before {
+    content: 'грн';
+    position: absolute;
+    font: bold 1.3rem Trebuchet MS;
+    right: -27px;
+    top: 0px;
+    border-bottom: 4px solid #bd4f61;
+}
+.little .price {
+    position: relative;
+    font: bold 1.8rem Trebuchet MS;
+    display: inline-block;
+    left: 30%;
+}
+.little .quant {
+    padding: 0 0 8px;
+    font: 1.4rem Trebuchet MS;
+    text-align: center;
+}
+.quant span {
+    font: bold 1.4rem Trebuchet MS;
+}
+.little img {
+    position: absolute;
+    top: 0;
+    left: calc(50% - 107px);
 }
