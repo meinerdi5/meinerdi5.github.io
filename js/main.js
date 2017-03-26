@@ -13,6 +13,8 @@ $(document).ready(function(){
         slidesToShow: 6,
         slidesToScroll: 3,
         arrows: false,
+        autoplay: true,
+        autoplaySpeed: 2000,
         responsive: [
     {
       breakpoint: 1024,

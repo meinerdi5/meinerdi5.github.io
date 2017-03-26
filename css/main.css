@@ -440,8 +440,24 @@ h1 {
 }
 .slider div {
     height: 164px;
-    width: 1000px;
 }
 .main .partners::before {
     left: 0;
+}
+.slider button {
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    text-indent: -9999px;
+    padding: 0;
+    margin: 0 33px 0 0;
+    outline: none;
+}
+.slider .slick-dots {
+    display: flex;
+    position: absolute;
+    left: calc(50% - 45px);
+}
+.partners .slider {
+    position: relative;
 }
