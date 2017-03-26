@@ -255,6 +255,7 @@ h1 {
     font: bold 3rem Trebuchet MS;
     padding: 0 0 55px;
     position: relative;
+    z-index: 1
 }
 .big .name::after {
     content: '';
@@ -271,6 +272,10 @@ h1 {
     position: absolute;
     height: 40px;
     width: 105px;
+    background: #e0cc91;
+    z-index: -1;
+    bottom: 62px;
+    left: -52px
 }
 .big .inf,
 .big .inf2 {
