@@ -219,7 +219,7 @@ h1 {
 }
 .main .products::before,
 .main .blog::before,
-.main .partners {
+.main .partners::before {
     content: '';
     display: block;
     position: absolute;
@@ -433,11 +433,15 @@ h1 {
     left: calc(50% - 50px);
 }
 /*PARTNERS--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-.partners a {
-    display: block;
-    height: 164px;
-    text-indent: -9999px;
-}
 .main .partners {
     padding: 100px;
+    position: relative;
+    border-top: 10px solid #f5f5f5;
+}
+.slider div {
+    height: 164px;
+    width: 1000px;
+}
+.main .partners::before {
+    left: 0;
 }
