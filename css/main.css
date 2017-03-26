@@ -238,6 +238,9 @@ h1 {
     margin: 0 0 30px;
 }
 /*Big--------------------------------------------*/
+.big .part1 {
+    margin: 0 0 30px;
+}
 .products .big {
     background: #e0e0e0;
     position: relative;
@@ -258,7 +261,6 @@ h1 {
     padding: 0 0 55px;
     position: relative;
     z-index: 1;
-    text-align: center;
 }
 .big .name::after {
     content: '';
@@ -303,6 +305,7 @@ h1 {
     width: 80px;
     background: #e0cc91;
     bottom: -35px;
+    left: calc(50% - 40px)
 }
 .big .price {
     font: bold 2.4rem Trebuchet MS;
@@ -315,6 +318,7 @@ h1 {
     left: 105px;
     top: 2px;
     border-bottom: 4px solid #bd4f61;
+    display: inline-block;
 }
 .big img {
     position: relative;
