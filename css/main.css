@@ -452,6 +452,8 @@ h1 {
     padding: 0;
     margin: 0 33px 0 0;
     outline: none;
+    background: #bd4f61;
+    border: none;
 }
 .slider .slick-dots {
     display: flex;
@@ -460,4 +462,21 @@ h1 {
 }
 .partners .slider {
     position: relative;
+}
+/*slides------------------------------*/
+.slide3 img {
+    position: relative;
+    top: -30px;
+}
+.slide5 img {
+    position: relative;
+    left: -30px;
+}
+.slide4 img {
+    position: relative;
+    right: -10px;
+}
+.slide1 img {
+    position: relative;
+    left: -10px;
 }
