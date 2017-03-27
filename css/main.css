@@ -1,29 +1,55 @@
-/*GLOBAL------------------------------------------------------------------------------------------------------*/
+/*GLOBAL----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 html {
-    font-size: 62.5%;  /* 1rem = 10px*/
+    font-size: 62.5%;
+    /* 1rem = 10px*/
 }
+
 p {
     margin: 0;
 }
+
 ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
+
 h1 {
     margin: 0;
 }
+
 * {
     outline: none;
 }
-/*HEADER------------------------------------------------------------------------------------------------------*/
+
+a:link:hover,
+a:visited:hover {
+    color: #91111c;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.advantages div:hover,
+.products div:hover,
+.blog div:hover {
+    border-color: #e0cc91;
+}
+
+
+/*HEADER----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
 .header {
-    height: 100vh;
+    height: 110vh;
     background: url('../img/backgroundHeader.jpg') center -100px no-repeat;
     padding: 50px 0 0;
 }
-/*Logo-----------------------------------------*/
+
+
+/*Logo--------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
 .header .logo {
     width: 262px;
     height: 126px;
@@ -33,36 +59,46 @@ h1 {
     z-index: 9;
     position: relative;
 }
-/*Navigation-----------------------------------*/
+
+
+/*Navigation--------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 .header .navigation {
     background: none;
     border: none;
     position: relative;
 }
+
 .navigation .menuDrop {
     border: none;
     z-index: 8;
-    background: rgba(255,255,255,0.9);
+    background: rgba(255, 255, 255, 0.9);
     position: absolute;
+    margin: 0 0 95px;
 }
+
 .header .menuDrop li a {
     font: bold 1.8rem Trebuchet MS;
     color: #000;
 }
+
 .header .burger {
     top: 40px;
     border: 1px solid #000;
 }
-/*First block---------------------------------*/
+
+
+/*First block-------------------------------------------------------------------------------------------------------------------------------------------------*/
+
 .header .about1 {
     position: relative;
     font: bold 1.8rem Trebuchet MS;
     z-index: 1;
     padding: 50px 0px 40px 60px;
 }
+
 .about1 .back {
-    background: rgba(240,240,240,0.8);
+    background: rgba(240, 240, 240, 0.8);
     height: 100%;
     position: absolute;
     width: 100%;
@@ -70,6 +106,7 @@ h1 {
     top: 0;
     left: 0;
 }
+
 .header .about1::before {
     content: '';
     display: block;
@@ -80,14 +117,18 @@ h1 {
     top: 30px;
     left: -10px;
 }
+
 .header .about2 {
-    background: rgba(176,21,34,0.8);
+    background: rgba(176, 21, 34, 0.8);
     color: #fff;
     font: bold 1.4rem Trebuchet MS;
     position: relative;
     padding: 30px 40px 30px 15px;
 }
-/*MEDIA Tablet Header---------------------------------------------------------------*/
+
+
+/*MEDIA HEADER tablet---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
 @media screen and (min-width: 768px) {
     .navigation .menuDrop {
         background: none;
@@ -119,43 +160,60 @@ h1 {
         left: -40px;
     }
 }
-/*ADVANTAGES-----------------------------------------------------------------------------------------------*/
+
+
+/*ADVANTAGES------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
 .main .advantages {
     padding: 80px 0 150px;
 }
 
-.advantages > div {
+.advantages>div {
     margin: 0 0 30px;
 }
-/*exclus------------------------------------*/
+
+
+/*Exclus------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
 .advantages .exclus {
     padding: 50px 35px 30px;
     border: 4px solid #e0e0e0;
 }
+
 .exclus p {
     font: bold 3rem Trebuchet MS;
     border-bottom: 4px solid #e0cc91;
     padding: 0 0 38px 0;
     margin: 0 0 65px;
 }
+
 .exclus a {
     font: 1.6rem 'PT serif';
     color: #000;
-    text-decoration: none;
     border-bottom: 4px solid #bd4f61;
     display: inline-block;
     margin: 0 30px 30px 0;
 }
+
 .exclus ul {
     display: flex;
     flex-flow: wrap;
 }
-/*price--------------------------------------*/
+
+.exclus a:hover {
+    border-bottom-color: #000;
+}
+
+
+
+/*Price-------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
 .advantages .price {
     padding: 90px 35px 55px;
     font: bold 2.4rem Trebuchet MS;
     border: 4px solid #e0e0e0;
 }
+
 .advantages .price::before {
     content: '';
     display: block;
@@ -165,13 +223,18 @@ h1 {
     background: url('../img/spritesheet.png') -1158px -186px;
     top: 35px;
 }
+
 .price .add {
     font: 1.8rem Trebuchet MS;
 }
+
 .price p:first-child {
     margin: 0 0 10px;
 }
-/*chesse--------------------------------------*/
+
+
+/*Chesse------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
 .advantages .cheese {
     padding: 55px 40px 200px;
     font: bold 2.4rem Trebuchet MS;
@@ -179,13 +242,18 @@ h1 {
     background: url('../img/spritesheet.png') -90px -460px #000;
     max-width: 460px;
 }
+
 .cheese .add {
     font: 1.8rem Trebuchet MS;
 }
+
 .cheese p:first-child {
     margin: 0 0 10px 0;
 }
-/*assort---------------------------------------*/
+
+
+/*Assort------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
 .advantages .assort {
     padding: 50px 40px 190px;
     font: bold 2.4rem Trebuchet MS;
@@ -193,18 +261,24 @@ h1 {
     background: url('../img/spritesheet.png') -140px -20px #000;
     max-width: 460px;
 }
-/*deliv-------------------------------------*/
+
+
+/*Deliv-------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
 .advantages .deliv {
     font: bold 2.4rem Trebuchet MS;
     padding: 85px 35px 55px;
     border: 4px solid #e0e0e0;
 }
+
 .deliv .add {
     font: 1.8rem/3rem Trebuchet MS;
 }
+
 .deliv p:first-child {
     margin: 0 0 5px;
 }
+
 .advantages .deliv::before {
     content: '';
     display: block;
@@ -214,12 +288,16 @@ h1 {
     background: url('../img/spritesheet.png') -660px -124px;
     top: 35px;
 }
-/*PRODUCTS------------------------------------------------------------------------------------------------*/
+
+
+/*PRODUCTS--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
 .main .products {
     border-top: 10px solid #f5f5f5;
     padding: 178px 0 88px;
     position: relative;
 }
+
 .main .products::before,
 .main .blog::before,
 .main .partners::before {
@@ -231,6 +309,7 @@ h1 {
     background: url('../img/spritesheet.png') -732px -124px;
     top: -10px;
 }
+
 .products h1,
 .blog h1,
 .partners h1 {
@@ -239,34 +318,46 @@ h1 {
     left: 120px;
     font: 4.8rem Trebuchet MS;
 }
+
 .products article {
     margin: 0 0 30px;
 }
-/*Big--------------------------------------------*/
+
+
+/*Big---------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
 .big .part1 {
     margin: 0 0 30px;
 }
+
 .products .big {
     background: #e0e0e0;
     position: relative;
     padding: 30px 0;
 }
+
 .products .big::before {
     content: '';
     display: block;
     position: absolute;
     background: #eaeaea;
     width: 100%;
-    height: 50%; 
+    height: 50%;
     right: 0;
     bottom: 0;
 }
+
 .big .name {
     font: bold 3rem Trebuchet MS;
     padding: 0 0 55px;
     position: relative;
     z-index: 1;
 }
+
+p.name a {
+    color: #000;
+}
+
 .big .name::after {
     content: '';
     display: block;
@@ -277,6 +368,7 @@ h1 {
     bottom: 25px;
     left: calc(50% - 40px);
 }
+
 .big .name::before {
     content: '';
     display: block;
@@ -288,20 +380,24 @@ h1 {
     bottom: 62px;
     left: -52px
 }
+
 .big .inf,
 .big .inf2 {
     font: 1.4rem 'PT serif';
     z-index: 2;
     position: relative;
 }
+
 .big .inf2 {
     font-weight: bold;
     margin: 0 0 25px;
     position: relative;
 }
+
 .big .last {
     margin: 0 0 80px;
 }
+
 .big .last::after {
     content: '';
     display: block;
@@ -312,10 +408,12 @@ h1 {
     bottom: -35px;
     left: calc(50% - 40px)
 }
+
 .big .price {
     font: bold 2.4rem Trebuchet MS;
     position: relative;
 }
+
 .big .price::before {
     content: 'грн';
     position: absolute;
@@ -325,23 +423,29 @@ h1 {
     border-bottom: 4px solid #bd4f61;
     display: inline-block;
 }
+
 .big img {
     position: relative;
     left: calc(50% - 75.5px);
     top: 0;
 }
-/*little---------------------------------*/
+
+
+/*Little------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
 .products .little {
     padding: 220px 0 35px;
     border: 4px solid #e0e0e0;
     position: relative;
 }
+
 .little .name {
     padding: 0 0 35px;
     font: bold 1.8rem Trebuchet MS;
     position: relative;
     text-align: center;
 }
+
 .little .name::before {
     content: '';
     display: block;
@@ -352,6 +456,7 @@ h1 {
     bottom: 17px;
     left: calc(50% - 40px)
 }
+
 .little .price::before {
     content: 'грн';
     position: absolute;
@@ -360,30 +465,61 @@ h1 {
     top: 0px;
     border-bottom: 4px solid #bd4f61;
 }
+
 .little .price {
     position: relative;
     font: bold 1.8rem Trebuchet MS;
     display: inline-block;
     left: calc(50% - 60px);
 }
+
 .little .quant {
     padding: 0 0 8px;
     font: 1.4rem Trebuchet MS;
     text-align: center;
 }
+
 .quant span {
     font: bold 1.4rem Trebuchet MS;
 }
+
 .little img {
     position: absolute;
     top: 0;
     left: calc(50% - 107px);
 }
+
 .little .vine {
     text-align: center;
     left: calc(50% - 31.5px);
 }
-/*BLOG-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*MEDIA PRODUCTS tablet-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media screen and (min-width: 768px) {
+    .products .big::before {
+        width: 50%;
+        height: 90%;
+    }
+    .big .name::after {
+        left: 0;
+    }
+    .big .last::after {
+        left: 0;
+    }
+    .products .big {
+        padding: 150px 0 170px;
+    }
+    .big img {
+        position: absolute;
+        top: -60px;
+    }
+}
+
+
+/*BLOG------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
 .main .blog {
     padding: 108px 0 0;
     border-top: 10px solid #f5f5f5;
@@ -391,16 +527,18 @@ h1 {
     border-bottom: 1px solid #e0e0e0;
     margin-bottom: 180px;
 }
+
 .blog .blogItem {
     padding: 30px 30px 30px 15px;
     border: 4px solid #e0e0e0;
     position: relative;
 }
+
 .blogItem a {
     font: bold 1.8rem Trebuchet MS;
     color: #000;
-    text-decoration: none;
 }
+
 .blogItem img {
     position: relative;
     top: -50px;
@@ -409,9 +547,11 @@ h1 {
     width: 100%;
     max-width: 100%;
 }
+
 .blog article {
     margin: 0 0 60px;
 }
+
 .blog .time {
     background: #fff;
     display: inline-block;
@@ -422,11 +562,13 @@ h1 {
     bottom: -9px;
     left: 0;
 }
+
 .blog .blogItem2 {
     padding: 30px 30px 30px 20px;
     font: 1.4rem 'PT serif';
     margin: 0 0 20px;
 }
+
 .blog .all {
     font: bold 1.8rem Trebuchet MS;
     color: #000;
@@ -435,18 +577,24 @@ h1 {
     bottom: 0;
     left: calc(50% - 50px);
 }
-/*PARTNERS--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*PARTNERS--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
 .main .partners {
     padding: 100px 0 270px;
     position: relative;
     border-top: 10px solid #f5f5f5;
 }
+
 .slider div {
     height: 164px;
 }
+
 .main .partners::before {
     left: 0;
 }
+
 .slider li {
     height: 6px;
     width: 6px;
@@ -459,90 +607,124 @@ h1 {
     border: none;
     cursor: pointer;
 }
+
 .slider .slick-dots {
     display: flex;
     position: absolute;
     left: calc(50% - 45px);
     flex-flow: wrap;
 }
+
 .partners .slider {
     position: relative;
 }
+
 .slider li.slick-active {
     background: #000;
 }
-/*slides------------------------------*/
+
+
+/*Slides------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
 .slide3 img {
     position: relative;
     top: -30px;
 }
+
 .slide5 img {
     position: relative;
     left: -30px;
 }
+
 .slide4 img {
     position: relative;
     right: -10px;
 }
+
 .slide1 img {
     position: relative;
     left: -10px;
 }
-/*FOOTER--------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*FOOTER----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
 .footer {
     background: #e0e0e0;
     padding: 45px 0 35px;
 }
+
 .footer .footerNav {
     display: flex;
     justify-content: space-between;
     margin: 0 0 20px;
     flex-flow: wrap;
 }
+
 .footerNav a {
     font: bold 1.6rem Trebuchet MS;
     color: #000;
     border-bottom: 4px solid #bd4f61;
-    text-decoration: none;
 }
+
 .cont a,
 .cont p {
     font: 1.4rem 'PT serif';
     color: #000;
-    text-decoration: none;
     border-bottom: 1px solid #bd4f61;
     padding: 0 18px 0 0;
 }
+
 .cont p {
     border: none;
 }
+
 .footer .cont {
     margin: 0 0 20px;
 }
+
 .footer .brand {
     font: bold 2.4rem Trebuchet MS;
     margin: 0 0 20px;
 }
+
 .brand .rights {
     font: 1.2rem 'PT serif';
 }
+
 .footer .social {
     display: flex;
     text-indent: -9999px;
     justify-content: space-between;
 }
+
 .social a {
     width: 30px;
     height: 20px;
     background: url('../img/spritesheet.png') -864px -321px;
     display: block;
 }
+
 .social .googl {
     background-position: -911px -321px;
 }
+
 .social .face {
     background-position: -958px -321px;
 }
+
 .social .twit {
     background-position: -1003px -321px;
+}
+
+
+/*MEDIA FOOTER tablet---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media screen and (min-width: 992px) {
+    .footer .footerNav {
+        justify-content: flex-start;
+    }
+    .footerNav li {
+        margin: 0 30px 0 0;
+    }
 }
